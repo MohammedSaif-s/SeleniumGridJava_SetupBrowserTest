@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Grid Suite" parallel="tests">
+
+	<test name="ChromeTest">
+		<parameter name="portNo" value="4455" />
+		<classes>
+			<class name="GridPackage.BrowserGridTest" />
+		</classes>
+
+	</test>
+	<test name="InternetExplorerTest">
+		<parameter name="portNo" value="4466" />
+		<classes>
+			<class name="GridPackage.BrowserGridTest" />
+		</classes>
+	</test>
+</suite>
